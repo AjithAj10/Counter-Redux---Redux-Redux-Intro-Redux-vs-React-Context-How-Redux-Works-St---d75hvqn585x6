@@ -4,7 +4,8 @@ import { useDispatch, useSelector } from "react-redux";
 
 function Btn(props) {
   const dispatch = useDispatch();
-  const val = useSelector(state => state);
+  const val = useSelector(state => state.counter);
+ // console.log(val);
   return (
     <div>
       <h1 data-testid="counter">{val}</h1>

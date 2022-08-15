@@ -12,13 +12,15 @@ export let decrement = () => {
     type: "DECREMENT",
   };
 };
-
+const init = {
+    counter : 0
+}
 //STATE
-const reducer = (state = 0, action) => {
+const reducer = (state = init, action) => {
   if (action.type === "INCREMENT") {
-    return state + 1;
+    return {counter :state.counter + 1}
   } else if (action.type === "DECREMENT") {
-    return state - 1;
+    return {counter :state.counter - 1}
   }
   return state
 };
