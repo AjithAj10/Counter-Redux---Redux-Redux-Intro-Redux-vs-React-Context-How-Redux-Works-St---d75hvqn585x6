@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
+import Btn from "./Btn";
 
 function App() {
 
   return (
-    <div id='main'>
-      
-    </div>
+      <div id="main">
+        <Btn/>
+      </div>
   );
 }
 
